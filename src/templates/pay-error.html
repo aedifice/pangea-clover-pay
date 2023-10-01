@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Oops...
+{% endblock %}
+
+{% block content %}
+    <h1 class="error">We were unable to complete your payment.</h1>
+    <a href="{{ url_for('ecomm') }}">Return</a>
+{% endblock %}

@@ -1,0 +1,4 @@
+pangea-sdk
+ecommClover
+Flask
+PyCryptodome

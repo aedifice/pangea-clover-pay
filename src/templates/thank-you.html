@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Thanks For Your Support!
+{% endblock %}
+
+{% block content %}
+    <h1>Thank you for your ${{ amount }} donation!</h1>
+    <a href="{{ url_for('ecomm') }}">Return</a>
+{% endblock %}

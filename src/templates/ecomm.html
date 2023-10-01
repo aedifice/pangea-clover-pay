@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Clover Meets Pangea
+{% endblock %}
+
+{% block content %}
+    <form method="post">
+        <div class="form-row">
+            <label for="amount">Donation Amount</label>
+            <input name="amount" required>
+        </div>
+
+        <div class="form-row">
+            <label for="card">Card Number</label>
+            <input name="card" value="{{ savedCard.card }}" required>
+        </div>
+
+        <div class="form-row">
+            <label for="expiration">MM/YY</label>
+            <input name="expiration" value="{{ savedCard.expiration }}" required>
+        </div>
+        
+        <div class="form-row">
+            <label for="cvv">CVV</label>
+            <input name="cvv" value="{{ savedCard.cvv }}" required>
+        </div>
+        
+        <div class="form-row">
+            <label for="zipcode">Zip</label>
+            <input name="zipcode" value="{{ savedCard.zipcode }}" required>
+        </div>
+
+        <div class="form-row">
+            <label for="save">Save Card?</label>
+            <input type="checkbox" name="save">
+        </div>
+
+        <button>Submit Payment</button>
+    </form>
+{% endblock %}
